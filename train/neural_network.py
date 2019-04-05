@@ -1,5 +1,5 @@
 #Author: Vinith Menon Suriyakumar, Christina Yan, Mike Kennelly
-#NetID: 13vms1
+#NetID: 13vms1, 14cy5, 13mwjk
 #Course: CISC 452, Winter 2019
 
 import pandas as pd
@@ -63,9 +63,9 @@ model.add(Dropout(0.1))
 model.add(Dense(1, activation='relu'))
 
 # [Mike] This functions compiles the above model with its associated loss function and optimizer
-# We used mean squared error as the loss function with the Adagrad optimizer
+# We used mean squared error as the loss function with the Adam optimizer
 model.compile(loss='mean_squared_error',
-              optimizer='adagrad',
+              optimizer='adam',
               metrics=['accuracy'])
 
 # This trains the model using 500 epochs and a batch size of 50
@@ -96,9 +96,9 @@ model.add(Dropout(0.1))
 model.add(Dense(1, activation='tanh'))
 
 # This functions compiles the above model with its associated loss function and optimizer
-# We used mean squared error as the loss function with the Adagrad optimizer
+# We used mean squared error as the loss function with the stochastic gradient descent optimizer
 model.compile(loss='mean_squared_error',
-              optimizer='adagrad',
+              optimizer='sgd',
               metrics=['accuracy'])
 
 # This trains the model using 500 epochs and a batch size of 50
@@ -129,9 +129,9 @@ model.add(Dropout(0.1))
 model.add(Dense(1, activation='hard_sigmoid'))
 
 # [Vinith] This functions compiles the above model with its associated loss function and optimizer
-# We used binary cross entropy error as the loss function with the Adagrad optimizer
+# We used binary cross entropy error as the loss function with the stochastic gradient descent optimizer
 model.compile(loss='binary_crossentropy',
-              optimizer='adagrad',
+              optimizer='sgd',
               metrics=['accuracy'])
 
 # This trains the model using 500 epochs and a batch size of 50

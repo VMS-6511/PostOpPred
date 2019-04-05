@@ -1,5 +1,5 @@
 #Author: Vinith Menon Suriyakumar, Christina Yan, Mike Kennelly
-#NetID: 13vms1
+#NetID: 13vms1, 14cy5, 13mwjk
 #Course: CISC 452, Winter 2019
 
 from scipy.io import arff
